@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  p Here are your #{title}
+  - for pokemon in pokemon
+    a(href="/pokemon" + pokemon.id method="get")
